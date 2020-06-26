@@ -19,5 +19,11 @@ var UIController = (function() {
 
 var controller = (function(budgetCtrl, UICtrl) {
 
-    budgetController.publicTest()
+    var z = budgetCtrl.publicTest(5);
+    
+    return {
+        anotherPublic: function() {
+            console.log(z);
+        }
+    }
 })(budgetController, UIController);
